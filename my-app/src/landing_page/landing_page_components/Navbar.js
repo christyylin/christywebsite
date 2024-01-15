@@ -21,10 +21,12 @@ function Navbar(props) {
   var startPath = urlObject.toString();
   return (
 
-    <nav className="fixed h-20 top-0 w-full bg-[#1A191A] text-white z-30">
+    <nav className="fixed h-20 top-0 w-full bg-[#F2f2f2] text-[#353535] z-30">
       <div className="flex items-center font-medium justify-around">
         <div className="flex items-start">
           <div className="p-5 lg:w-auto w-full flex z-40">
+          <div style={{ background: 'rgba(255, 255, 255, 0.5)' }}>
+          </div>
             {/* <div className="flex flex-row left-2 absolute lg:static">
               <div
                 className={`rocket-container ${hovered ? 'rocket-fly' : ''} flex justify-start`}

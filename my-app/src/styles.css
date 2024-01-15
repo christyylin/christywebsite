@@ -1,0 +1,42 @@
+/* styles.css */
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('https://fonts.gstatic.com/s/josefinsans/v32/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMhhLybpUVzEEaq2.woff2') format('woff2');
+    /* Add additional sources for different formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400
+  }
+
+  h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700; /* Bold */
+  }
+
+  h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500; /* Medium */
+  }
+  
+  body {
+    font-family: 'Lexend', sans-serif;
+    background-color: #f2f2f2; /* Set your desired background color */
+  }
+
+  /* styles.css */
+
+.font-josefin-sans {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  /* styles.css or another stylesheet */
+
+.text-60 {
+    font-size: 60pt;
+  }
+  

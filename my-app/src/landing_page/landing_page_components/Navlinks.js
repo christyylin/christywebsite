@@ -35,6 +35,14 @@ const NavLinks = ({ open, setOpen }) => {
       new_tab: false,
       link: "/contact",
     },
+
+    {
+      name: "Submit Design Inquiry",
+      submenu: false,
+      new_tab: false,
+      link: "/submitdesigninquiry",
+    },
+
   ];
   return (
     <>
@@ -43,7 +51,7 @@ const NavLinks = ({ open, setOpen }) => {
           <div className="px-3 text-left lg:cursor-pointer group">
             {link.link ? (
               <a
-                className="text-gray-100 text-lg font-['Helvetica_Neue'] hover:text-sky-300 flex justify-between items-center py-7 lg:pr-0 pr-5 group"
+                className="text-[#353535] text-lg font-['Josefin_sans'] hover:text-sky-300 flex justify-between items-center py-7 lg:pr-0 pr-5 group"
                 href={link.link}
                 target={link.new_tab ? "_blank" : "_self"}
                 // onClick={() => setOpen(false)}

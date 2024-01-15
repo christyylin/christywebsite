@@ -20,7 +20,7 @@ function LandingPage() {
   return (
     <div className="">
       <Helmet>
-        <title>Upreach</title>
+        <title>christylin</title>
         {robotMetaTag}
       </Helmet>
       <Navbar open={open} setOpen={setOpen} />

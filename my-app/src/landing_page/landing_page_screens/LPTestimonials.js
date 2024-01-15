@@ -3,7 +3,7 @@ import React from 'react';
 
 const testimonialsData = [
   {
-    name: 'Holden Caulfield',
+    name: 'Cathy Huang',
     title: 'Head of Sales',
     text: [
       'Reaching out to big companies like Microsoft always felt like shouting into the void, until Upreach came along. ',

@@ -7,7 +7,12 @@ module.exports = {
       "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
     ],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          custom: ['Josefin_Sans']
+        },
+      },
     },
     plugins: [require("flowbite/plugin")],
   };
+
