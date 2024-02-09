@@ -25,29 +25,8 @@ function Navbar(props) {
       <div className="flex items-center font-medium justify-around">
         <div className="flex items-start">
           <div className="p-5 lg:w-auto w-full flex z-40">
-          <div style={{ background: 'rgba(255, 255, 255, 0.5)' }}>
+          <div style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
           </div>
-            {/* <div className="flex flex-row left-2 absolute lg:static">
-              <div
-                className={`rocket-container ${hovered ? 'rocket-fly' : ''} flex justify-start`}
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
-              >
-                <img
-                  src="/logo.png"
-                  alt="logo"
-                  className="lg:cursor-pointer h-9"
-                  onAnimationEnd={() => setHovered(false)}
-                />
-                <Link
-                  to="/#top"
-
-                  className="font-bold text-3xl lg:cursor-pointer font-['Helvetica_Neue']"
-                >
-                  Upreach
-                </Link>
-              </div>
-            </div> */}
             <div
               className="text-3xl lg:hidden right-3 absolute"
               onClick={() => props.setOpen(!props.open)}

@@ -3,10 +3,17 @@ import Projects from "./landing_page_screens/Projects";
 import About from "./landing_page_screens/About";
 import Contact from "./landing_page_screens/Contact";
 import Home from "./landing_page_screens/Home";
+
+
 import {
     projectsPath,
     aboutPath,
     contactPath,
+    mementoMoriPath,
+    miroPath,
+    upreachPath,
+    newsletterPath,
+    snapchatPath
 } from "../constants/RouteConstants";
 // import Footer from "./landing_page_components/Footer";
 import Navbar from "./landing_page_components/Navbar";

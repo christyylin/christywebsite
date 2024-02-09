@@ -36,12 +36,6 @@ const NavLinks = ({ open, setOpen }) => {
       link: "/contact",
     },
 
-    {
-      name: "Submit Design Inquiry",
-      submenu: false,
-      new_tab: false,
-      link: "/submitdesigninquiry",
-    },
 
   ];
   return (

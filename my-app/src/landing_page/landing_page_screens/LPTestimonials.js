@@ -1,65 +1,70 @@
 
 import React from 'react';
+import Star_ratings from '../../images/Star_ratings.svg';
 
 const testimonialsData = [
   {
     name: 'Cathy Huang',
-    title: 'Head of Sales',
+    title: 'CEO Of Folio',
     text: [
-      'Reaching out to big companies like Microsoft always felt like shouting into the void, until Upreach came along. ',
-      { bold: 'It was like having a dedicated assistant who knew exactly who to contact and what to say.' },
-      ' I was skeptical at first, but the personalized email campaigns Upreach created were nothing short of remarkable. They resonated with the right people, leading to meetings that have opened so many doors for us.'
+      { bold: ' "Love working with Christy! She is my go to for product design, graphic design, and product operations" ' },
     ],
-    image: '/landing_page_assets/headerImg/person2-preview.png'
+    subtext: [
+      ' "Very talented, proactive and easy to work with. Highly recommend Christy for design and creative projects. She is an outstanding UI/UX designer. Very efficient, asks great questions, and is responsive and professional" ',
+    ],
+
   },
   {
-    name: 'Ashley Smith',
-    title: 'VP of Marketing',
+    name: 'Maura McInery-Rowley',
+    title: 'Founder of Memento Mori',
     text: [
-      'Marketing to a niche audience in a bustling city like NYC can be daunting. I was lost in a sea of possibilities until Upreach. ',
-      { bold: 'Its AI capabilities are precise, pinpointing data scientists who would genuinely benefit from our solution.' },
-      ' The targeted outreach was so precise and well-crafted that it felt personal, not automated. Our response rates soared, and so did our sales, leads and revenue.'
+      {bold: ' "Christy is a joy to work with!" ' },
     ],
-    image: '/landing_page_assets/headerImg/person1-preview.png'
+    subtext: [
+      ' "She is efficient and talented in her designs. She recieves feedback well and is able to translate your vision into a beautiful product" '
+    ],
+
   },
   {
-    name: 'Alexa Johnson',
-    title: 'Business Analyst',
+    name: 'Tabinda',
+    title: 'CEO of Trrrimber',
     text: [
-      'As a business analyst focusing on the finance sector, finding the right collaboration opportunities is crucial. ',
-      { bold: 'I was looking for finance companies with 50-250 employees interested in document processing.' },
-      ' Upreach sifted through mountains of data and pinpointed exactly what I needed. The level of detail and accuracy in its findings has been pivotal in shaping our strategic partnerships.'
+      { bold: ' "Highly recommend Christy for product design, graphic design, UI/UX, and prototyping!" '},
     ],
-    image: '/landing_page_assets/headerImg/person3-preview.png'
+    subtext: [
+      ' "Very impressed with Christy\'s product design skills. She created a complete marketplace prototype for us in a week and handed off to the engineers to make the process really easy" ',
+    ],
+
   },
 ];
 
 const LPTestimonials = () => {
   return (
-    <section className="bg-[#1A191A] text-center pt-5 md:pt-20">
-      <h2 className="text-2xl md:text-4xl font-semibold mb-12 text-gray-100">Hear what our users have to say</h2>
+    <section className="bg-[#F2F2F2] text-center pt-5 md:pt-20">
+      <h2 className="text-2xl md:text-4xl font-medium mb-12 text-[#213A52]">some people i've enjoyed working with :)</h2>
       <div className='h-full w-screen'>
         <div className="flex justify-start flex-wrap w-full">
           {testimonialsData.map((testimonial, index) => (
-            <div className='w-full p-5 md:w-1/3'>
-              <div key={index} className={`bg-gradient-to-br from-blue-100 to-white h-full rounded-3xl p-4 md:p-5 shadow-l flex flex-col`}>
-                <div className="flex justify-start h-24 w-full">
-                  {/* Placeholder for avatar image */}
-                  <img
-                    src={testimonial.image}
-                    alt="DashboardImg"
-                    className="lg:cursor-pointer object-cover h-1/2"
-                  />
+            <div className='mx-auto w-4/5 py-4 px-8 md:5'>
+              <div key={index} className={`bg-white h-full rounded-2xl py-4 md:p-10 shadow-l flex flex-col`}>
+                <div className="flex justify-start h-18 w-full">
                   <div className='ml-4 flex flex-col'>
-                    <h3 className="text-lg font-semibold text-left text-black">{testimonial.name}</h3>
-                    <p className="text-gray-500 text-left">{testimonial.title}</p>
                   </div>
                 </div>
-                <p className="text-black text-xl text-left">
+                <p className="text-black text-lg text-left mt-4 mb-4">
                   {testimonial.text.map((part, partIndex) =>
                     typeof part === 'string' ? part : <b key={partIndex}>{part.bold}</b>
                   )}
                 </p>
+                    <div className="text-lg font-regular text-left text-black mb-4">{testimonial.subtext}</div>
+                    <h3 className="text-lg font-medium text-left text-black">{testimonial.name}</h3>
+                    <div className="text-medium font-medium text-left text-black mb-4">{testimonial.title}</div> 
+                    <img
+                      src={Star_ratings}
+                      alt="DashboardImg"
+                      className="cursor-pointer"
+                      style={{ width: '10%', height: 'auto', marginLeft: '-3px' }}
+                    />
               </div>
             </div>
           ))}

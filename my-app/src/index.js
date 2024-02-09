@@ -1,15 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import LP_HeaderImage from './images/LP_HeaderImage.jpg';
+import AppRouter from './constants/AppRouter';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 const MyComponent = () => {
@@ -20,8 +21,7 @@ const MyComponent = () => {
   );
 };
 
-export default App;
-
+export default MyComponent;
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
