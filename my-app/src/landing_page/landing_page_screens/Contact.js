@@ -6,7 +6,10 @@ const Contact = () => {
     <div>
       {/* Other content */}
       <div id="calendly-signup">
-        <InlineWidget url="https://calendly.com/christylin33/1-1-coffee-chat" />
+        <InlineWidget
+          url="https://calendly.com/christylin33/1-1-coffee-chat"
+          styles={{height: '830px', paddingTop: '50px'}}
+        />
       </div>
     </div>
   );
