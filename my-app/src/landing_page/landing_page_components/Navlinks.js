@@ -17,12 +17,12 @@ const NavLinks = ({ open, setOpen }) => {
   }
 
   const links = [
-    {
-      name: "Projects",
-      submenu: false,
-      new_tab: false,
-      link: "/projects",
-    },
+    // {
+    //   name: "Projects",
+    //   submenu: false,
+    //   new_tab: false,
+    //   link: "/projects",
+    // },
     {
       name: "About",
       submenu: false,

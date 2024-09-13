@@ -4,13 +4,13 @@ import MementoMori from '../../images/MementoMori.png';
 import Snapchat from '../../images/Snapchat.png';
 import Nwsltr from '../../images/Nwsltr.ai.png';
 import Miro from '../../images/Miro.png';
-import ProjectComponent from './ProjectComponent'; 
+import ProjectComponent from './ProjectComponent';
 
 //const LPProjects = () => {
     //const navigate = useNavigate();
-  
+
     //const handleButtonClick = () => {
-      //navigate('/projects'); 
+      //navigate('/projects');
     //};
 
 function LPProjects() {
@@ -42,12 +42,15 @@ function LPProjects() {
                     imageSource={Nwsltr}
                     title= "Nwsltr.ai"
                     description= "Product Design"
+                    onClick={() => {
+                        window.location.assign("https://nwsltr.ai");
+                      }}
                 />
             </div>
 
         </div>
     </div>
-    
+
   );
 };
 // };
