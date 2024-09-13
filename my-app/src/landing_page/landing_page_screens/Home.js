@@ -17,8 +17,8 @@ function Home(props) {
       <div className="bg-[#F2F2F2] text-white flex flex-col justify-center">
         <LPHeader props={props}></LPHeader>
         <hr class=" bg-gray-200 border-0 dark:bg-gray-700 mx-auto"></hr>
-        <LPAboutme />
-        <hr class=" bg-[#F2f2f2] border-0 dark:bg-gray-700 mx-auto"></hr>
+        {/* <LPAboutme />
+        <hr class=" bg-[#F2f2f2] border-0 dark:bg-gray-700 mx-auto"></hr> */}
         <LPSkills />
         <hr class=" bg-[#F2f2f2] border-0 dark:bg-gray-700 mx-auto"></hr>
         <LPFeature/>

@@ -26,7 +26,7 @@ function ContactCard(props) {
 }
 function Contact() {
   return (
-    <div className="w-screen md:h-screen bg-white mb-20">
+    <div className="w-screen md:h-screen bg-[#F2f2f2] mb-20">
       <div className="pt-20 md:pt-10">
         <div className="text-black text-center justify-center">
           <div className="text-2xl sm:text-3xl lg:text-4xl mb-5 md:mb-20  text-center font-medium lg:font-bold">
@@ -35,7 +35,7 @@ function Contact() {
           <div className="flex flex-col mx-auto w-full md:flex-row justify-center">
             <ContactCard
               name={"Christy Lin"}
-              propic={"../../images/Teddy.png"}
+              propic={"/Christy.png"}
               positionTitle={"Designer"}
               linkedinUrl={"https://www.linkedin.com/in/christylin/"}
               email={"christylin33@berkeley.edu"}
@@ -54,7 +54,7 @@ function Contact() {
             onClick={() => {
               window.location.assign("https://calendly.com/christylin33/1-1-coffee-chat");
             }}
-            class="mt-5 mb-12 md:my-5"
+            class="mt-5 md:my-5 text-[#213A52] border border-[#213A52] hover:text-black focus:outline-none shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-bold rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 hover:cursor-pointer hover:bg-[#D7E5ED] hover:text-[##213A52]"
           >
             Schedule a Coffee Chat
           </Button>
